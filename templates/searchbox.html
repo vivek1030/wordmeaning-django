@@ -1,0 +1,26 @@
+<!-- section search box  -->
+<section class="container section-searchbox">
+    <div class="wrap-content">
+        <div class="labelsearch">
+            <p class="searchtextlabel">Search for a words</p>
+        </div>
+        <form class="row searchboxform" action='{% url "search" %}' method="GET">
+            <div class="column1">
+                <input type="text" name="keyword" class="search-inp" placeholder="type word" autocomplete="off">
+            </div>
+            <div class="column1">
+                <button type="submit" class="btn-search">
+                        <svg width="20" height="20" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" preserveAspectRatio="xMidYMid meet">
+                        <path xmlns="http://www.w3.org/2000/svg" d="M0 0h24v24H0z" fill="none"></path>
+                        <path xmlns="http://www.w3.org/2000/svg"
+                            d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
+                        </path>
+                    </svg>
+                    Find meaning
+                </button>
+            </div>
+        </form>
+    </div>
+</section>
+<!-- section search box end  -->

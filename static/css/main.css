@@ -1,0 +1,200 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  padding: 0 1em;
+}
+
+.wrap-content {
+  max-width: 800px;
+  margin: auto;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.section-header {
+  position: relative;
+}
+
+.section-header .logo-section {
+  position: absolute;
+  padding: 0 3em;
+}
+
+.section-header .logo-section .logo {
+  font-size: 40px;
+  font-weight: 800;
+  color: #28328C;
+}
+
+.section-header .navbar-menu .navbar-ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0px 1px 3px 0px #ccc;
+          box-shadow: 0px 1px 3px 0px #ccc;
+  padding: 1em 0.5em;
+  margin-top: 2em;
+}
+
+.section-header .navbar-menu .navbar-ul .navbar-item .navbar-link {
+  text-decoration: none;
+  padding: 0.5em 1em;
+  color: #000;
+  font-size: 16px;
+}
+
+.section-searchbox {
+  padding: 1em 0;
+}
+
+.section-searchbox .labelsearch {
+  text-align: center;
+  margin: 1.5em 0 0.5em;
+}
+
+.section-searchbox .labelsearch .searchtextlabel {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.section-searchbox .searchboxform {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-searchbox .searchboxform .column1 {
+  padding: 0.25em;
+}
+
+.section-searchbox .searchboxform .column1 .search-inp {
+  padding: 0.5em 1em;
+  border: none;
+  -webkit-box-shadow: 0px 1px 3px 0px #ccc;
+          box-shadow: 0px 1px 3px 0px #ccc;
+}
+
+.section-searchbox .searchboxform .column1 .search-inp:focus {
+  border: none;
+  outline: none;
+}
+
+.section-searchbox .searchboxform .column1 .btn-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  padding: 0.5em;
+  border: unset;
+  color: #fff;
+  background-color: #28328C;
+}
+
+.section-searchbox .searchboxform .column1 .btn-search svg {
+  fill: #fff;
+  margin-right: 2px;
+}
+
+.section-recent {
+  margin-top: 4em;
+}
+
+.section-recent .row {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section-recent .row .column1 .top-lookups {
+  -webkit-box-shadow: 0px 1px 3px 0px #ccc;
+          box-shadow: 0px 1px 3px 0px #ccc;
+  padding: 1em 1em;
+}
+
+.section-recent .row .column1 .top-lookups .heading-text {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.section-recent .row .column1 .top-lookups .ol-list {
+  padding: 1.5em 1.5em 0;
+}
+
+.section-recent .row .column1 .top-lookups .ol-list .items {
+  padding: 0.25em;
+}
+
+.section-recent .row .column1 .numberofsearch {
+  -webkit-box-shadow: 0px 1px 3px 0px #ccc;
+          box-shadow: 0px 1px 3px 0px #ccc;
+  padding: 1em 1em;
+  text-align: center;
+}
+
+.section-recent .row .column1 .numberofsearch .heading-text, .section-recent .row .column1 .numberofsearch .till-date {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.section-recent .row .column1 .numberofsearch .number-search {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 1em;
+}
+
+.fixed-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.fixed-nav .fixedfooternav {
+  float: right;
+  list-style: none;
+  background-color: #28328C;
+  padding: 0.25em 1em;
+  border-radius: 6px 6px 0 0;
+}
+
+.fixed-nav .fixedfooternav .nav-item {
+  display: inline-block;
+}
+
+.fixed-nav .fixedfooternav .nav-item .navlink {
+  text-decoration: none;
+  color: #fff;
+}
+
+.section-result {
+  margin-top: 4em;
+}
+
+.section-result .card-meaning {
+  padding: 1em 1em;
+  background: #fff;
+  margin: 2em 0;
+  color: #000;
+  -webkit-box-shadow: 0px 1px 5px 1px #ece9e9;
+          box-shadow: 0px 1px 5px 1px #ece9e9;
+}
+
+.section-result .card-meaning .definition {
+  text-align: justify;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block title %}
+Homepage
+{% endblock %}
+
+
+{% block content %}
+{% include 'navbar.html' %}
+{% include 'searchbox.html' %}
+
+    <!-- Recent section  -->
+    <section class="container section-recent">
+        <div class="wrap-content">
+            <div class="row">
+                <div class="column1">
+                    <div class="top-lookups">
+                        <h2 class="heading-text">Top Lookups Right Now</h2>
+                        <ol class="ol-list">
+                            <li class="items">Ranking</li>
+                            <li class="items">Ranking</li>
+                            <li class="items">Ranking</li>
+                            <li class="items">Ranking</li>
+                            <li class="items">Ranking</li>
+                            <li class="items">Ranking</li>
+                            <li class="items">Ranking</li>
+                            <li class="items">Ranking</li>
+                            <li class="items">Ranking</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="column1">
+                    <div class="numberofsearch">
+                        <h2 class="heading-text">Number of searches till Date</h2>
+                        <p class="till-date">2 december 2020</p>
+                        <p class="number-search">20,201</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Recent section end  -->
+
+{% endblock %}

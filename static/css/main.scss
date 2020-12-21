@@ -1,0 +1,191 @@
+// Sizing Padding Margin 
+$p1:0.5em;
+$p2:1em;
+$p3:1.5em;
+$p4:2em;
+$p5:2.5em;
+$p6:3em;
+
+// Color 
+$primaryColor:#28328C;
+$secondaryColor:#fff;
+$txtColor:#000;
+$color1:#fff;
+
+// Font sizing 
+$f1:10px;
+$f2:12px;
+$f3:14px;
+$f4:16px;
+$f5:18px;
+$f6:20px;
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+// content style all 
+.container{
+    padding: 0 $p2;
+}
+.wrap-content{
+    max-width: 800px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+// header section 
+.section-header{
+    position:relative;
+    .logo-section{
+        position: absolute;
+        padding: 0 $p6;
+        .logo{
+            font-size: $f6 + $f6;
+            font-weight: 800;
+            color: $primaryColor;
+        }
+    }
+    .navbar-menu{
+        .navbar-ul{
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0px 1px 3px 0px #ccc;
+            padding: $p2 $p1;
+            margin-top:$p4;
+            .navbar-item{
+                .navbar-link {
+                    text-decoration: none;
+                    padding: $p1 $p2;
+                    color:$txtColor;
+                    font-size: $f4;
+                }
+            }
+        }
+    }
+}
+
+
+// Section search box 
+.section-searchbox{
+    padding: $p2 0;
+    .labelsearch{
+        text-align: center;
+        margin: $p1+$p2 0 $p1;
+        .searchtextlabel{
+            font-size: $f5;
+            font-weight: 600;
+        }
+    }
+    .searchboxform{
+        justify-content: center;
+        .column1{
+            padding: $p1/2;
+            .search-inp{
+                padding: $p1 $p2;
+                border: none;
+                box-shadow: 0px 1px 3px 0px #ccc;
+                &:focus{
+                    border: none;
+                    outline: none;
+                }
+            }
+            .btn-search{
+                display: flex;
+                cursor: pointer;
+                padding: $p1;
+                border: unset;
+                color:$secondaryColor;
+                background-color: $primaryColor;
+                svg{
+                    fill:$secondaryColor;
+                    margin-right: 2px;
+                }
+            }
+        }
+    }
+}
+
+// recent section 
+.section-recent{
+    margin-top:$p4+$p4;
+    .row{
+        justify-content: space-between;
+        .column1{
+            .top-lookups{
+                box-shadow: 0px 1px 3px 0px #ccc;
+                padding: $p2 $p2;
+                .heading-text {
+                    font-size: $f5;
+                    font-weight: 600;
+                }
+                .ol-list {
+                    padding: $p3 $p3 0;
+                    .items{
+                        padding: $p1/2;
+                    }
+                }
+            }
+            .numberofsearch{
+                box-shadow: 0px 1px 3px 0px #ccc;
+                padding: $p2 $p2;
+                text-align: center;
+                .heading-text,.till-date {
+                    font-size: $f4;
+                    font-weight: 400;
+                }
+                .number-search {
+                    font-size: $f4;
+                    font-weight: 400;
+                    margin-top: $p2;
+                }
+            }
+        }
+    }
+}
+
+
+// Fixed navbar footer
+.fixed-nav{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    .fixedfooternav{
+        float: right;
+        list-style: none;
+        background-color: $primaryColor;
+        padding: $p1/2 $p2;
+        border-radius: 6px 6px 0 0;
+        .nav-item {
+            display: inline-block;
+            .navlink{
+                text-decoration: none;
+                color: $secondaryColor;
+            }
+        }
+    }
+}
+
+.section-result{
+    margin-top:$p4+$p4;
+    .card-meaning {
+        padding: $p2 $p2;
+        background: $secondaryColor;
+        margin: $p4 0;
+        color:#000;
+        box-shadow: 0px 1px 5px 1px #ece9e9;
+        .word{
+
+        }
+        .definition {
+            text-align: justify;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}
+Result
+{% endblock %}
+
+
+{% block content %}
+{% include 'navbar.html' %}
+{% include 'searchbox.html' %}
+
+<!-- Result shown  -->
+<section class="container section-result">
+    <div class="wrap-content">
+        {% for val in data %}
+            <div class="card-meaning">
+                <h2 class="word">{{ val.word }}</h2>
+                <p class="definition"><strong>Definition : </strong>{{ val.definition }}</p>
+                <p class="example"><strong>Example : </strong>{{ val.example }}</p>
+                <p class="author"><span>by </span>{{ val.author }}</p>
+                <p class="link-source">link: <a href="{{ val.permalink }}" target="_blank">{{ val.permalink }}</a></p>
+            </div>
+        {% endfor %}
+    </div>
+</section>
+
+{% endblock %}
